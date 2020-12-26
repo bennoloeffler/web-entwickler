@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <title>World!</title>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap" rel="stylesheet">
+        <meta charset="utf-8"/>
+        <style type = "text/css">
+            	p {
+                    color:blueviolet;
+                    
+                }
+                .red-bold-class {
+                    color: red;
+                    font-weight: bold;
+                }
+                #green-italic-id {
+                    color: chartreuse;
+                    font-style: italic;
+                }
+                #bg-width-id {
+                    color: chartreuse;
+                    background-color: #e2c9e9;
+                    width: 150px;
+                    float:left;
+                    padding: 5px;
+                    margin: 2px 2px 2px 30px; /* startet oben */
+                    text-align: right;
+                }
+                .clear-float {
+                    clear: both
+                }
+
+                #block3 {
+                    background-color: #edd7f3;
+                    width: 150px;
+                    padding: 20px;
+                    position: relative;
+                    z-index: 1;
+                }
+                #block4 {
+                    color: black;
+                    background-color: #c0d4c4;
+                    width: 150px;
+                    padding: 20px;
+                    border: black solid 5px;
+                    border-radius: 20px;
+                    position:relative;
+                    bottom: 60px;
+                    left: 50px;
+                    z-index: 2;
+                    opacity: 0.5;
+                    font-family: 'IBM Plex Mono', monospace;
+                }
+                .left {
+                    text-align: left;
+                }
+                .just {
+                    text-align: justify;
+                }
+                .right {
+                    text-align: right;
+                }
+
+
+        </style>
+    </head>
+    <body>
+
+        <p>
+            <iframe align="right" width="560" height="315" src="https://www.youtube.com/embed/WYeFqSjvGaY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+
+        <h1>Hello World!</h1>
+        <h2>a few facts about the world we live in</h2>
+        <p><img src="https://cdn.britannica.com/w:1100/77/149177-131-092B7860/view-space-Earth-Western-Hemisphere-Hurricane-Linda-Sept-11-1997.jpg" width="200"/></p>        
+        <p>Earth (1 AU from the Sun) is the largest and densest of the inner planets, the only one known to have current geological activity, and the only place where life is known to exist.[83] Its liquid hydrosphere is unique among the terrestrial planets, and it is the only planet where plate tectonics has been observed. Earth's atmosphere is radically different from those of the other planets, having been altered by the presence of life to contain 21% free oxygen.[84] It has one natural satellite, the Moon, the only large satellite of a terrestrial planet in the Solar System.</p>
+        <hr>
+        <h3>The Earth</h3>
+        <ul>
+            <li><b>Mass:</b> 5,9 billion kg</li>
+            <li><b>Diameter:</b> 12,8 km</li>
+            <li><b>Sattelites: </b><a href="https://de.wikipedia.org/wiki/Moon">The Moon</a></li>
+        </ul>
+        <hr>
+        <h3>Top 3 facts about the Earth</h3>
+        <ol>
+            <li>rotation is slowing down</li>
+            <li>a year isn't 365 days and a day isn't 24h long</li>
+            <li>70% of the surface is water and about 1/3 of the fresh water is unfrozen</li>
+        </ol>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Radius</td>
+                    <td>AverageT</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mars</td>
+                    <td>3,4 km</td>
+                    <td>-55 °C</td>
+                </tr>
+                <tr>
+                    <td>Venus</td>
+                    <td>6,0 km</td>
+                    <td>460 °C</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <hr>
+        <p>
+            <p>want to know more?</p>
+
+            <form action="https://en.wikipedia.org/wiki/Solar_System#Earth">
+                <input value="mehr erfahren" type="submit">
+            </form>
+        </p>
+
+        <h1 style="color:blue; font-weight: lighter">ein wenig überschrift - aber gestyled</h1>
+        
+        <p >inline style</p>
+        <p >inline style</p>
+        <p class="red-bold-class">styling mit class</p>
+        <p class="red-bold-class" id="green-italic-id">styling mit id overwrites class</p>
+        <p>die<span class="red-bold-class"> innere tags </span>überschreiben die äußeren tags. <span id="green-italic-id">sowas geht auch.</span> Und danach weiter.</p>
+
+        <p > styling ausgelagert in *.css</p>
+
+        <div class = "red-bold-class">
+            <p >div block 1 dieser block kann so breit werden wie das fenster</p>
+            <p >div block 1 HINTERBRUNDFARBE wird nicht überschrieben - ist in p nicht definiert</p>
+        </div>
+        <div id = "bg-width-id">        
+            <p >div block 2 auch wenn der block sehr breit würde, wird er nicht...</p>
+            <p >div block 2 FARBE: ist in p definiert und wird daher überschrieben!</p>
+        </div>
+        <div id = "bg-width-id">        
+            <p >div block 3 block sehr breit würde, wird er nicht...</p>
+            <p >div block 3 überschrieben!</p>
+        </div>
+        
+        <p class="clear-float">ein wenige Text unter den blöcken</p>
+        
+        <div id = "block3">        
+            <p >div block 3 auch wenn der block sehr breit würde, wird er nicht...</p>
+        </div>
+        <div id = "block4">        
+            andere Schrift... Kein p... block 4 block sehr breit würde, wird er nicht...
+        </div>
+
+        <div id="block3">
+            <p class="left">ein wenige Text unter den blöcken und sogar noch ein wenig</p>
+            <p class="just">ein wenige Text unter den blöcken und auch noch...</p>
+            <p class="right">ein wenige Text unter den blöcken und noch...</p>
+        </div>
+
+    </body>
+</html>
